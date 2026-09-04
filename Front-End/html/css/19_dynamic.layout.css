@@ -1,0 +1,30 @@
+body {
+  background-color: #333;
+  margin: 0;
+}
+
+:root {
+  --header-background-color: #fed50a;
+  --header-border-color: #e3a20e;
+}
+
+.big-box {
+  max-width: 680px;
+  height: 1000px;
+  background-color: aliceblue;
+  margin: 0 auto;
+}
+
+.top-box {
+  background-color: var(--header-background-color);
+  padding: 10px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.buttons {
+  display: inline-block;
+  text-align: left;
+}

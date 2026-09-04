@@ -20,3 +20,51 @@ div {
 .text-align-right {
   text-align: right;
 }
+
+.box-2 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-3 {
+  width: 3rem;
+  height: 2rem;
+}
+
+.box {
+  display: inline-block;
+}
+
+.vertical-align-top > div {
+  vertical-align: top;
+}
+
+.vertical-align-middle > div {
+  vertical-align: middle;
+}
+
+.vertical-align-bottom > div {
+  vertical-align: bottom;
+}
+
+.vertical-align-top,
+.vertical-align-middle,
+.vertical-align-bottom {
+  height: 30rem;
+}
+
+#user-email {
+  outline: 0;
+  padding: 0.625rem;
+  height: 2rem;
+}
+
+img {
+  width: 4rem;
+}
+
+.aligns > label,
+.aligns > input,
+.aligns > img {
+  vertical-align: middle;
+}
