@@ -1,0 +1,20 @@
+/** 
+* CSS 의 유일한 주석 
+*
+* @format
+*/
+
+/* Element Selector (Tag Selector) */
+body {
+  /* 글자의 굵기 정도를 조정 (100 ~ 900) */
+  font-weight: 100;
+}
+
+div {
+  /*글자 색상*/
+  color: #ff0;
+  /*글자 크기 조정*/
+  font-size: 1rem;
+  /*박스의 배경색 조정*/
+  background-color: #f00;
+}

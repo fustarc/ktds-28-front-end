@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.news-section {
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+
+  font-size: 0px;
+}
+
+.half-box {
+  vertical-align: top;
+  display: inline-block;
+
+  width: 48%;
+  height: 100%;
+
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  margin: 0px 5px;
+
+  font-size: 1rem;
+}
+
+.photo-news {
+  display: inline-block;
+  width: 46%;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  margin: 10px 5px;
+}
