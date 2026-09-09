@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 0px;
+}
+
+.idCreate {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.inputId,
+.inputPw,
+.inputEmail,
+.inputname,
+.inputDate,
+.inputTelcom,
+.inputRadio,
+.inputTelnum {
+  border-top: 1px solid #aaa;
+  padding: 7px;
+
+  font-size: 1rem;
+  color: #aaa;
+
+  vertical-align: middle;
+
+  & > input {
+    border: none;
+    width: 74%;
+  }
+
+  & > input:focus {
+    background-color: #f3faff;
+  }
+}
+.inputId {
+  &::after {
+    content: "@naver.com";
+
+    font-size: 0.9rem;
+  }
+
+  &::before {
+    background-image: url(../image/person.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+
+  border: none;
+}
+
+.inputPw {
+  &::before {
+    background-image: url(../image/lock.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+}
+
+.inputEmail {
+  &::before {
+    background-image: url(../image/mail.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+}
+
+.identify {
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.inputname {
+  &::before {
+    background-image: url(../image/person.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+
+  border: none;
+}
+
+.inputDate {
+  &::before {
+    background-image: url(../image/calendar.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+}
+
+.inputTelcom {
+  &::before {
+    background-image: url(../image/tower.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+}
+
+.input-area {
+  text-align: center;
+  font-size: 0;
+  display: inline-block;
+
+  padding-left: 10px;
+
+  & > .input-field {
+    display: inline-block;
+  }
+
+  & label {
+    display: inline-block;
+    font-size: 0.8rem;
+
+    padding: 7px 40px;
+
+    &[for="male"] {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &[for="female"] {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &[for="national"] {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &[for="foreigner"] {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+
+label + input[type="radio"] {
+  display: none;
+}
+
+label:has(+ input[type="radio"]:checked) {
+  border: 1px solid #03c75a;
+  color: #03c75a;
+}
+
+label:has(+ input[type="radio"]:not(:checked)) {
+  border: 1px solid #bbb;
+  color: #bbb;
+}
+
+.inputTelnum {
+  &::before {
+    background-image: url(../image/mobile.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+}
+
+.agreement {
+  font-size: 1rem;
+
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+
+  &::before {
+    background-image: url(../image/check.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "ㅤㅤ";
+  }
+
+  & > div {
+    display: inline-block;
+
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  & > div::before {
+    content: "[필수] ";
+
+    font-size: 0.7rem;
+    color: #03c75a;
+  }
+}

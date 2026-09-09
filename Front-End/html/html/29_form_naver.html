@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/29_form_naver.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="idCreate">
+        <div class="inputId">
+          <input type="text" id="user-id" placeholder="아이디" />
+        </div>
+        <div class="inputPw">
+          <input type="password" id="user-id" placeholder="비밀번호" />
+        </div>
+        <div class="inputEmail">
+          <input
+            type="email"
+            id="user-email"
+            placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)"
+          />
+        </div>
+      </div>
+
+      <div class="identify">
+        <div class="inputname">
+          <input type="text" id="user-name" placeholder="이름" />
+        </div>
+        <div class="inputDate">
+          <input
+            type="text"
+            id="user-birthdate"
+            placeholder="생년월일 8자리"
+            maxlength="8"
+          />
+        </div>
+        <div class="inputTelcom">
+          <select>
+            <option>SKT</option>
+            <option>KT</option>
+            <option>LGT</option>
+          </select>
+        </div>
+        <div class="inputRadio">
+          <div class="input-area">
+            <div class="input-field">
+              <label for="male">남자</label>
+              <input type="radio" name="gender" id="male" checked />
+            </div>
+            <div class="input-field">
+              <label for="female">여자</label>
+              <input type="radio" name="gender" id="female" />
+            </div>
+          </div>
+          <div class="input-area">
+            <div class="input-field">
+              <label for="national">내국인</label>
+              <input type="radio" name="nationality" id="national" checked />
+            </div>
+            <div class="input-field">
+              <label for="foreigner">외국인</label>
+              <input type="radio" name="nationality" id="foreigner" />
+            </div>
+          </div>
+        </div>
+        <div class="inputTelnum">
+          <input type="tel" id="user-telnum" placeholder="휴대전화번호" />
+        </div>
+      </div>
+      <div class="agreement">
+        <div>인증 약관 전체동의</div>
+      </div>
+    </div>
+  </body>
+</html>
