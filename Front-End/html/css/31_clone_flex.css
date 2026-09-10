@@ -1,0 +1,236 @@
+/** @format */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-background-color: #fed50a;
+  --header-border-color: #e3a20e;
+  --board-background-color: #f3f3f3;
+  --red-background-color: #f94064;
+  --orange-font-color: #f80;
+}
+
+body {
+  background-color: #4d4d4d;
+  margin: 0;
+
+  font-size: 0;
+}
+
+.wrapper {
+  background-color: #4d4d4d;
+}
+
+.header {
+  display: flex;
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid var(--header-border-color);
+  max-width: 680px;
+  padding: 3px 5px 3px 10px;
+  margin: 0 auto;
+  align-items: center;
+
+  & div,
+  & img {
+    vertical-align: middle;
+  }
+
+  & > .logo-area {
+    flex-grow: 1;
+  }
+}
+
+img {
+  height: 35px;
+}
+
+.board {
+  display: flex;
+
+  flex-direction: column;
+
+  background-color: var(--board-background-color);
+
+  max-width: 680px;
+  margin: 0 auto;
+
+  font-size: 1rem;
+  border-bottom: 1px solid #555;
+  text-align: center;
+}
+
+.board-tab {
+  display: inline-block;
+  width: 45%;
+
+  padding: 7px 0;
+}
+
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.issue {
+  color: var(--red-background-color);
+  font-weight: 500;
+
+  border-bottom: 1px solid var(--red-background-color);
+}
+
+.board-list {
+  text-align: left;
+
+  border-top: 1px solid #d5d5d5;
+
+  margin: 0;
+  padding: 10px 18px;
+}
+
+.contents {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  & > span {
+    &:not(:last-child)::after {
+      content: "|";
+      padding-left: 10px;
+      color: #ddd;
+    }
+  }
+}
+
+.content-tag {
+  background-color: var(--red-background-color);
+  color: #f3f3f3;
+
+  border: 1px solid #700;
+  border-radius: 3px;
+
+  text-align: center;
+  font-size: 14px;
+  width: 38px;
+}
+
+.content-title {
+  color: #494949;
+  font-weight: 400;
+}
+
+.alert {
+  color: var(--red-background-color);
+  font-weight: 800;
+}
+
+.reply-count {
+  color: var(--red-background-color);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.writer {
+  color: #b55600;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.number {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.date {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pagenation {
+  display: flex;
+  border-top: 1px solid #d5d5d5;
+  background-color: #eee;
+  height: 6rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  border-radius: 3px;
+  border: 1px solid #aaa;
+
+  color: #888;
+
+  font-size: 1rem;
+  margin: 33px 2px;
+  height: 30px;
+}
+
+.selected {
+  color: var(--red-background-color);
+
+  border-color: var(--red-background-color);
+  font-weight: 500;
+}
+
+.login-section {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.login {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8%;
+  background-color: #555;
+  color: #aaa;
+
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+
+.info {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  color: #555;
+}
+
+.logo,
+.wright,
+.my {
+  /*배경이미지 지정*/
+  background-image: url(../image/goodgag_sprite.png);
+  /*반복 X*/
+  background-repeat: no-repeat;
+}
+
+.logo {
+  /*width, height 지정*/
+  width: 87px;
+  height: 36px;
+  /*백그라운드 위치 지정*/
+}
+
+.wright {
+  /*width, height 지정*/
+  width: 37px;
+  height: 33px;
+  /*백그라운드 위치 지정*/
+  background-position: -38px -36px;
+}
+
+.my {
+  /*width, height 지정*/
+  width: 38px;
+  height: 33px;
+  /*백그라운드 위치 지정*/
+  background-position: 0px -36px;
+}
