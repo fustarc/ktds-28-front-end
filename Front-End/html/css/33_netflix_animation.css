@@ -1,0 +1,164 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  position: sticky;
+
+  width: 100%;
+  height: 80px;
+
+  padding: 20px 40px;
+  background-color: #000;
+  opacity: 0.9;
+
+  & > .logo {
+    background-image: url(../image/netflix/Netflix_Logo_CMYK.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width: 100px;
+  }
+}
+
+.main-area {
+  display: block;
+}
+
+.recommend {
+  display: flex;
+
+  width: 100%;
+  height: 60vh;
+
+  padding: 0px 40px;
+
+  background-color: #000;
+
+  & > .page {
+    background-image: url(../image/netflix/Mentalist.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 40px;
+  }
+}
+
+.content-area {
+  display: block;
+  background-color: #000;
+
+  color: #eee;
+  font-size: 1.2rem;
+
+  padding: 20px 30px;
+
+  & > .category {
+    margin-bottom: 10px;
+  }
+}
+
+.content-list {
+  display: flex;
+
+  gap: 10px;
+}
+
+.content {
+  position: relative;
+  flex-shrink: 0;
+
+  min-width: 210px;
+  min-height: 130px;
+
+  border-radius: 15px;
+  background-color: #000;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    transition-delay: 0.4s;
+
+    position: relative;
+    z-index: 99999;
+  }
+  /*
+  & > .action-button,
+  & > .movie-info,
+  & > .tag-area {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    opacity: 1;
+    visibility: visible;
+  }
+  */
+  & > .thumbnail1,
+  & > .thumbnail2,
+  & > .thumbnail3,
+  & > .thumbnail4,
+  & > .thumbnail5,
+  & > .thumbnail6,
+  & > .thumbnail7,
+  & > .thumbnail8 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+  }
+
+  & > .thumbnail1 {
+    background-image: url(../image/netflix/images1.jpg);
+  }
+
+  & > .thumbnail2 {
+    background-image: url(../image/netflix/BreakingBad.jpg);
+  }
+
+  & > .thumbnail3 {
+    background-image: url(../image/netflix/squid.jpg);
+  }
+
+  & > .thumbnail4 {
+    background-image: url(../image/netflix/cyberpunk.jpg);
+  }
+
+  & > .thumbnail5 {
+    background-image: url(../image/netflix/BreakingBad.jpg);
+  }
+
+  & > .thumbnail6 {
+    background-image: url(../image/netflix/BreakingBad.jpg);
+  }
+
+  & > .thumbnail7 {
+    background-image: url(../image/netflix/BreakingBad.jpg);
+  }
+
+  & > .thumbnail8 {
+    background-image: url(../image/netflix/BreakingBad.jpg);
+  }
+}
+
+/*
+.action-button,
+.movie-info,
+.tag-area {
+  display: flex;
+}
+*/
